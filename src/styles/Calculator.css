@@ -1,0 +1,115 @@
+.calculator {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #a15caf;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-field {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    border: 2px solid #a15caf;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .buttons button {
+    padding: 15px;
+    font-size: 1.2em;
+    background-color: #a15caf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buttons button:hover {
+    background-color: #9d3ac4;
+  }
+  
+  .result {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: #9919d9;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .name{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200px;
+    color:#9919d9;
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .history-panel {
+    flex: 1;
+    width: 300px;
+    color: white;
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .history-panel h2{
+    margin-left: 70px;
+  }
+
+  .history-panel ul{
+    overflow-y: auto;
+    max-height: 680px;
+  }
+
+  .history-panel button{
+    margin-left: 30px;
+    padding: 15px;
+    font-size: 1.2em;
+    background-color: #a15caf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  } 
+
+  .history-panel button:hover{
+    background-color: #9d3ac4;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    display: none;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(#9919d9, #7009a3)
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(#7009a3, #500377)
+  }
